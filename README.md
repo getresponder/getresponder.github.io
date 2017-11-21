@@ -1,2 +1,2 @@
 # getresponder.github.io
-Marking ite for Reponder - Chrome Extension
+Marketing site for Reponder - Chrome Extension
