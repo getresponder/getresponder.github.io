@@ -1,11 +1,13 @@
-//gulpfile.js
-var gulp        = require('gulp');
-var deploy      = require('gulp-gh-pages');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
 
-/**
- * Push build to gh-pages
- */
-gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
+gulp.task('styles', function() {
+    gulp.src('sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./css/'))
+});
+
+//Watch task
+gulp.task('default',function() {
+    gulp.watch('sass/**/*.scss',['styles']);
 });
