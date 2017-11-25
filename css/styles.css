@@ -45,7 +45,9 @@ table {
 /*-----@media Query Sizes-----*/
 body {
   background: #fff;
-  font-family: "BlinkMacSystemFont",-apple-system,"Helvetica Neue",Helvetica,sans-serif;
+  font-family: "proxima-nova", "BlinkMacSystemFont",-apple-system,"Helvetica Neue",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 400;
   box-sizing: border-box; }
 
 img {
@@ -120,7 +122,7 @@ p {
     align-items: center; }
     @media only screen and (min-width: 38em) {
       .header .inner {
-        padding: 0 0 30px; } }
+        padding: 0 10px 30px; } }
   .header .header-left {
     display: inline-block;
     margin: 0 auto;
@@ -142,7 +144,30 @@ p {
 
 main {
   color: #656A7A;
-  width: 100%; }
+  margin: 0 1em; }
+  main .number {
+    border-radius: 50px;
+    background: #fff;
+    border: 1px #e1e1e1 solid;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: -10px 0 0 -20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    opacity: 0; }
+    @media only screen and (min-width: 38em) {
+      main .number {
+        opacity: 1; } }
   main #masthead {
     display: block;
     width: 100%;
@@ -171,7 +196,10 @@ main {
         display: inline-flex; } }
   .examples .three-col {
     flex-basis: 33.3% !important;
-    padding: 2em; }
+    padding: 0; }
+    @media only screen and (min-width: 38em) {
+      .examples .three-col {
+        padding: 2em; } }
   .examples .example-img {
     margin: 0 auto;
     overflow: hidden;
