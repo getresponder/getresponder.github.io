@@ -112,8 +112,11 @@ p {
   -ms-flex-pack: center;
   justify-content: center;
   border: none;
-  margin: 25px 0 0;
+  margin: 50px 0 0;
   z-index: 101; }
+  @media only screen and (min-width: 42em) {
+    .header {
+      margin: 25px 0 0 0; } }
   .header .inner {
     border-bottom: 1px #e1e1e1 solid;
     display: flex;
@@ -129,6 +132,9 @@ p {
     -ms-flex-align: center;
     align-items: center;
     max-width: 50em; }
+    @media only screen and (min-width: 42em) {
+      .header .inner {
+        padding: 30px 15px 50px 15px; } }
   .header .logo {
     display: block;
     max-width: 300px;
