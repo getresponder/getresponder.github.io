@@ -45,7 +45,7 @@ table {
 /*-----@media Query Sizes-----*/
 body {
   background: #fff;
-  font-family: "proxima-nova", "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "aktiv-grotesk", "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   box-sizing: border-box;
@@ -104,7 +104,8 @@ p {
 
 .bold {
   font-weight: 700;
-  color: #101010; }
+  color: #101010;
+  line-height: 1.2; }
 
 .header {
   display: flex;
@@ -213,8 +214,7 @@ main {
       margin: 0;
       overflow: hidden;
       border-radius: 10px;
-      border: 1px #b3b4b9 solid;
-      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25); }
+      border: 1px #b3b4b9 solid; }
       @media only screen and (min-width: 42em) {
         main #masthead .big-photo {
           margin: 0 auto;

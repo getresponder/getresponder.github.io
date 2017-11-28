@@ -8,7 +8,7 @@ $marblegrey: #656A7A;
 $bordergrey: #b3b4b9;
 $lightgrey: #e1e1e1;
 $blk: #101010;
-$fontstack: "proxima-nova", "BlinkMacSystemFont",-apple-system,"Helvetica Neue",Helvetica,sans-serif;
+$fontstack: "aktiv-grotesk", "BlinkMacSystemFont",-apple-system,"Helvetica Neue",Helvetica,sans-serif;
 
 /*-----@media Query Sizes-----*/
 
@@ -93,6 +93,7 @@ p {
 .bold {
     font-weight: 700;
     color: $blk;
+    line-height: 1.2;
 }
 
 .header {
@@ -233,7 +234,6 @@ main {
             overflow: hidden;
             border-radius: 10px;
             border: 1px $bordergrey solid;
-            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
 
             @media only screen and (min-width: $desktop) {
                 margin: 0 auto;
